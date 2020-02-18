@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <title>Denis Morozov's CV</title>
   </head>
   <body class="cv">
     <div class="cv-wrapper">
-      <h1 class="cv-name">Denis Morozov</h1>
+      <div class="cv-header">
+        <h1 class="cv-name">Denis Morozov</h1>
+        <img class="cv-profile-picture" src="userpic.png" alt="Photo of Denis Morozov">
+      </div>
       <main class="cv-content">
         <p class="cv-content__paragraph">
           <span class="cv-content__paragraph_strong">Email:</span> <a href="mailto:denis_morozov@epam.com">denis_morozov@epam.com</a>
@@ -23,16 +26,15 @@
         <p class="cv-content__paragraph">  
           I have a little experience in programming while I was studying in university (C++, C#, Java). Recently I also took several cources on Java and JavaScript on Codecademy and HTML + CSS course on HTML Academy.
         </p>   
-        <code class="cv-content-codeblock">    
-          <p class="cv-content-codeblock__codeline_commented">//an example from latest codecademy task to see how code looks in GIT markdown</p>
-          <p class="cv-content-codeblock__codeline">const Airplane = require('./1-airplane.js');</p>
-          <p class="cv-content-codeblock__codeline_empty"></p>
-          <p class="cv-content-codeblock__codeline">function displayAirplane() {</p>
-          <p class="cv-content-codeblock__codeline">    console.log(Airplane.myAirplane);</p>
-          <p class="cv-content-codeblock__codeline">}</p>
-          <p class="cv-content-codeblock__codeline_empty"></p>
-          <p class="cv-content-codeblock__codeline">displayAirplane();</p>
-        </code>  
+        <pre class="cv-content-codeblock">
+<span class="cv-content-codeblock__code_commented">//an example from latest codecademy task to see how code looks in GIT markdown</span>
+<span class="cv-content-codeblock__code_bold">const</span> Airplane = require('<span class="cv-content-codeblock__code_colored">./1-airplane.js</span>');
+
+<span class="cv-content-codeblock__code_bold">function</span> displayAirplane() {
+  console.log(Airplane.myAirplane);
+}
+
+displayAirplane();</pre>  
         <p class="cv-content__paragraph">
           I don’t have any experience in programming except cources on Codecademy and HTML Academy. Have 6+ years experience in software testing.
         </p> 

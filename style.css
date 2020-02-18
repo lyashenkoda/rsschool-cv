@@ -8,6 +8,19 @@
   max-width: 960px;
 }
 
+.cv-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cv-profile-picture {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
 .cv-content {
   font-size: 15px;
 }
@@ -17,19 +30,25 @@
   font-weight: bold;
 }
 
-.cv-content__codeblock {
+.cv-content-codeblock {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   text-align: left;
-}
-
-.cv-content-codeblock__codeline {
-
-}
-
-.cv-content-codeblock__codeline_commented {
+  font-family: "Source Code Pro", "Courier New", monospace;
+  font-size: 13px;
+  background-color: #F6F8Fa;
 
 }
 
-.cv-content-codeblock__codeline_empty {
+.cv-content-codeblock__code_commented {
+  font-style: italic;
+  color: gray;
+}
+
+.cv-content-codeblock__code_bold {
+  font-weight: bold;
+}
+
+.cv-content-codeblock__code_colored {
+  color: rgb(221, 17, 68)
 }
